@@ -1,0 +1,6 @@
+[submodule "vendor/plugins/carrierwave"]
+	path = vendor/plugins/carrierwave
+	url = git://github.com/jnicklas/carrierwave.git
+[submodule "vendor/plugins/paperclip"]
+	path = vendor/plugins/paperclip
+	url = git://github.com/thoughtbot/paperclip.git
