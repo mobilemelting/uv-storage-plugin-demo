@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/carrierwave"]
+	path = vendor/plugins/carrierwave
+	url = git://github.com/urbanvention/carrierwave.git
