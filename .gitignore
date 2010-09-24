@@ -1,0 +1,10 @@
+log/*
+tmp/*
+.DS_Store
+.project
+.actionScriptProperties
+.flexProperties
+.idea
+.idea/*
+.settings
+.settings/*
