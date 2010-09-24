@@ -1,3 +1,6 @@
 [submodule "vendor/plugins/carrierwave"]
 	path = vendor/plugins/carrierwave
 	url = git://github.com/urbanvention/carrierwave.git
+[submodule "vendor/plugins/uv_storage"]
+	path = vendor/plugins/uv_storage
+	url = git://github.com/urbanvention/uv-storage-plugin.git
