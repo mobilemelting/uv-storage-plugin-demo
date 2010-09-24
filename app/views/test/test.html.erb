@@ -1,0 +1,29 @@
+
+<% if @photo.present? %>
+  <%= debug @photo %>
+  <%= image_tag @photo.photo.url() %>
+  
+  <% @photo.photo.versions.each do |version, value| %>
+    <%= image_tag value.url() %>
+  <% end %>
+  
+  <%= debug @photo.photo.file.content_type %>
+  <%= debug @photo.photo.file.access_level %>
+  <%# debug @photo.photo.file.access_level = 'authenticated-read' if not @photo.photo.file.access_level == Uv::Storage::File::ACL_PROTECTED %>
+  <%= debug @photo.photo.file.nodes %>
+  <%= debug @photo.photo.file.size %>
+  <%= debug @photo.photo.file.filename %>
+  
+  <h2>Lets modify the file</h2>
+  
+  <%# debug @photo.photo.file %>
+  <%# debug @photo.photo.file.methods %>
+  <%# @photo.photo.file.access_policy %>
+  <%# @photo.photo.file.content_type %>
+<% end %>
+
+
+<% form_tag root_path, :multipart => true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag %>
+<% end %>
